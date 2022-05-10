@@ -6,87 +6,112 @@
     <title>Muni's Portfolio</title>
     <meta
       name="description"
-      content="Portfolio for world-renowned software engineer Muni" />
+      content="Portfolio for world-renowned software engineer Muni"
+    />
     <meta name="author" content="Muni" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <script
       src="https://kit.fontawesome.com/be7498019b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" 
-    rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <div>
-        <ul class="navbar__menu">
-          <li class="navbar_menu_item">Home</li>
-          <li class="navbar_menu_item">About</li>
-          <li class="navbar_menu_item">Skills</li>
-          <li class="navbar_menu_item">My work</li>
-          <li class="navbar_menu_item">Notion</li>
-          <li class="navbar_menu_item">Contact</li>
-        </ul>
-      </div>
-    </nav>      
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Notion</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
 
     <!-- Home -->
     <section id="home">
       <main class="home__outer">
         <main class="Home__inner">
-            <h1 class="home__title">Kang Muni</h1>
-            <div>
+          <h1 class="home__title">Kang Muni</h1>
+          <div>
             <img
-            src="images/muni.png"
-            alt="Muni's profile photo"
-            class="home__avater"
+              src="images/muni.png"
+              alt="Muni's profile photo"
+              class="home__avater"
             />
             <h3 class="home__subtitle">Front end Development</h3>
             <h2 class="home__description">
-              Hello, I am a potential Front end developer <br />
-              with knowledge of backends.</h2>
-            </div>
+              Hello, I am a potential Frontend developer <br />
+              with knowledge of backends.
+            </h2>
+          </div>
         </main>
-      </main> 
+      </main>
     </section>
 
     <!-- About -->
     <section id="about">
-    <h2>About me</h2>
-    <p>
-      I was studying for full stack development at an academy called Code States.<br />
-      but in the middle, I dropped off to focus on the front end development.<br />
-      Now, I am studying front end course at Dream Coding Academy to work on personal projects.<br />
-      I will be the best in the front end field. I want to touch design tools by working with Photoshop or Sketch etc.<br />
-      Also, for smooth communication with the back end developer, I am working hard on the server.<br />
-    </p>
-    <div class="about__major">
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js"></i>
-          <i class="fab fa-react"></i>
+      <h2>About me</h2>
+      <p>
+        I was studying for full stack development at an academy called Code
+        States.<br />
+        but in the middle, I dropped off to focus on the front end
+        development.<br />
+        Now, I am studying front end course at Dream Coding Academy to work on
+        personal projects.<br />
+        I will be the best in the front end field. I want to touch design tools
+        by working with Photoshop or Sketch etc.<br />
+        Also, for smooth communication with the back end developer, I am working
+        hard on the server.<br />
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="major__title">Front-end</div>
+          <div class="major__description">
+            HTML,CSS,JavsScript,<br />
+            React,Web APIs
+          </div>
         </div>
-        <div class="major__title">Front-end</div>
-        <div class="major__description">
-          HTML,CSS,JavsScript,<br />
-          React,Web APIs
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="major__title">Back-end</div>
+          <div class="major__description">node.js</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-solid fa-mobile-button"></i>
+          </div>
+          <div class="major__title">Mobile</div>
+          <div class="major__description">Android,IOS,React Native</div>
         </div>
       </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-node-js"></i>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="images/favicon.png" alt="dream-coding" class="job__logo" />
+          <p class="job__name">Dream-coding</p>
+          <p class="job__period">2021.01-2021.12</p>
         </div>
-        <div class="major__title">Back-end</div>
-        <div class="major__description">node.js</div>
+        <div class="job">
+          <img src="images/favicon.png" alt="dream-coding" class="job__logo" />
+          <p class="job__name">Dream-coding</p>
+          <p class="job__period">2021.01-2021.12</p>
+        </div>
       </div>
-    </div>
     </section>
 
     <!-- Skills -->
@@ -94,9 +119,10 @@
       <h2>Skills</h2>
       <p>
         Although it is difficult to challenge new things,<br />
-        I like the sense of accomplishment that comes from endeavoring and persevering.<br />
+        I like the sense of accomplishment that comes from endeavoring and
+        persevering.<br />
         Regular habits are tamed by living time distribution and planning.<br />
-        I want to do better with the skills I have learned.<br /> 
+        I want to do better with the skills I have learned.<br />
         In the future, we will show steady growth with steady habits.<br />
       </p>
       <div class="skillset">
@@ -162,12 +188,20 @@
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
               <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Visual Studio Code</span></li>
             </ul>
           </div>
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-          </ul>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Git</span></li>
+              <li><span>Git</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -176,7 +210,7 @@
     <section id="work">
       <h2>My work</h2>
       <h3>Projects</h3>
-      <div class="work__category">
+      <div class="work__categories">
         <button class="category__btn">
           All<span class="category__count">6</span>
         </button>
@@ -191,96 +225,72 @@
         </button>
       </div>
       <div class="work__projects">
-        <a
-        href="https://github.com/kangmuni" 
-        class="project"
-        target="blank"
-        >
-      <img 
-      class="projects__img" 
-      src="images/projects/project1.png" 
-      alt="Youtube"
-      />
-      <div class="projects__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with HTML and CSS</span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/kangmuni" 
-        class="project"
-        target="blank"
-        >
-      <img 
-      class="projects__img" 
-      src="images/projects/project2.png" 
-      alt="header"
-      />
-      <div class="projects__description">
-        <h3>header</h3>
-        <span>responsive header coding with HTML and CSS and JS</span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/kangmuni" 
-        class="project"
-        target="blank"
-        >
-      <img 
-      class="projects__img" 
-      src="images/projects/project3.png" 
-      alt="Youtube"
-      />
-      <div class="projects__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with HTML and CSS</span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/kangmuni" 
-        class="project"
-        target="blank"
-        >
-      <img 
-      class="projects__img" 
-      src="images/projects/project4.png" 
-      alt="Youtube"
-      />
-      <div class="projects__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with HTML and CSS</span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/kangmuni" 
-        class="project"
-        target="blank"
-        >
-      <img 
-      class="projects__img" 
-      src="images/projects/project5.png" 
-      alt="Youtube"
-      />
-      <div class="projects__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with HTML and CSS</span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/kangmuni" 
-        class="project"
-        target="blank"
-        >
-      <img 
-      class="projects__img" 
-      src="images/projects/project7.png" 
-      alt="Youtube"
-      />
-      <div class="projects__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with HTML and CSS</span>
-      </div>
-      </a>
+        <a href="https://github.com/kangmuni" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/project1.png"
+            alt="Youtube"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/kangmuni" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/project2.png"
+            alt="header"
+          />
+          <div class="project__description">
+            <h3>header</h3>
+            <span>responsive header coding with HTML and CSS and JS</span>
+          </div>
+        </a>
+        <a href="https://github.com/kangmuni" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/project3.png"
+            alt="Youtube"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/kangmuni" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/project4.png"
+            alt="Youtube"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/kangmuni" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/project5.png"
+            alt="Youtube"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/kangmuni" class="project" target="blank">
+          <img
+            class="project__img"
+            src="images/projects/project7.png"
+            alt="Youtube"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -290,27 +300,27 @@
       <h3>See what they say about me</h3>
       <div class="testimonials">
         <div class="testimonial">
-          <img 
-            src="images/muni.png" 
-            alt="people"
-            class="testimonial__avatar"
-          />
+          <img src="images/muni.png" alt="people" class="testimonial__avatar" />
           <div class="testimonials__speech-bubble">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
-              feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+              placerat eleifend leo.
             </p>
             <p class="name"><a href="">Ellie</a> /TigerSpike</p>
           </div>
         </div>
         <div class="testimonial">
-          <img 
-            src="images/muni.png" 
-            alt="people"
-            class="testimonial__avatar"
-          />
+          <img src="images/muni.png" alt="people" class="testimonial__avatar" />
           <div class="testimonials__speech-bubble">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
-              feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+              placerat eleifend leo.
             </p>
             <p class="name"><a href="">Ellie</a> /TigerSpike</p>
           </div>
