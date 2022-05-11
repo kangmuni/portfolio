@@ -118,7 +118,7 @@ p {
 .navbar__menu__item {
   padding: 8px 15px;
   margin: 10px;
-  font-size: var(--font-medium);
+  font-size: var(--font-regular);
   cursor: pointer;
   color: var(--color-white);
   border-radius: var(--size-border-radius);
@@ -134,7 +134,7 @@ p {
 }
 
 .navbar__toggle-btn {
-  background-color: var(--color-dark-pink);
+  background-color: transparent;
   color: var(--color-white);
   font-size: var(--font-large);
   position: absolute;
