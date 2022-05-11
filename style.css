@@ -125,7 +125,7 @@ p {
 
 /* Section Common */
 .section {
-  padding: 70px;
+  padding: 50px;
   text-align: center;
   max-width: 1200px;
   margin: auto;
@@ -338,7 +338,7 @@ p {
 }
 
 .work__projects {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -395,4 +395,45 @@ p {
   margin-left: -12px;
   margin-top: 8px;
   background-color: var(--color-dark-white);
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: var(--color-dark-white);
+  max-width: none;
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 10px;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 20px;
+}
+
+.testimonials__speech-bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-yellow);
+  border-radius: var(--size-border-radius);
+}
+
+.testimonials__speech-bubble a {
+  color: var(--color-dark-pink);
 }
