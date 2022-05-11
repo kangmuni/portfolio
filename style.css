@@ -127,6 +127,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -137,7 +141,6 @@ p {
   text-align: center;
   padding: 16px;
   height: 100vh;
-  max-width: none;
 }
 
 .home__title {
@@ -241,7 +244,6 @@ p {
 
 #skills {
   background-color: var(--color-pink);
-  max-width: none;
 }
 
 .skillset {
@@ -400,7 +402,6 @@ p {
 /* Testimonials */
 #testimonials {
   background-color: var(--color-dark-white);
-  max-width: none;
 }
 
 .testimonials {
@@ -442,7 +443,6 @@ p {
 /* Contact */
 #contact {
   background-color: var(--color-pink);
-  max-width: none;
 }
 
 .contact__title,
