@@ -123,6 +123,16 @@ p {
   background-color: var(--color-pink);
 }
 
+.navbar__toggle-btn {
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  font-size: var(--font-large);
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  display: none;
+}
+
 /* Section Common */
 .section {
   padding: 50px;
@@ -469,4 +479,20 @@ p {
 .contact__rights {
   color: var(--color-dark-grey);
   font-size: var(--font-small);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    padding-top: 100px;
+  }
 }
