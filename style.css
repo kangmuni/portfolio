@@ -45,10 +45,10 @@ body {
   cursor: default;
 }
 
-/* a {
+a {
   text-decoration: none;
   color: var(--color-white);
-} */
+}
 
 ul {
   list-style: none;
@@ -99,6 +99,7 @@ p {
   flex-direction: row-reverse;
   background-color: var(--color-dark-pink);
   padding: 16px;
+  height: 100px;
 }
 
 .navbar__menu {
@@ -107,12 +108,13 @@ p {
 }
 
 .navbar__menu__item {
-  padding: 8px 25px;
+  padding: 8px 15px;
   margin: 10px;
   font-size: var(--font-medium);
   cursor: pointer;
   color: var(--color-white);
   border-radius: var(--size-border-radius);
+  text-align: center;
 }
 
 .navbar__menu__item.active {
@@ -128,7 +130,7 @@ p {
   color: var(--color-white);
   font-size: var(--font-large);
   position: absolute;
-  top: 40px;
+  top: 25px;
   right: 10px;
   display: none;
 }
@@ -494,5 +496,32 @@ p {
   .navbar__menu {
     flex-direction: column;
     padding-top: 100px;
+    display: none;
+  }
+
+  .navbar__menu__item {
+    width: 100%;
+  }
+
+  .about__majors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .major {
+    margin-bottom: 20px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 180px;
+    height: 180px;
   }
 }
