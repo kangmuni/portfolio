@@ -55,6 +55,14 @@ workBtnContainer.addEventListener('click', (event) => {
   if (filter == null) {
     return;
   }
+
+  //이전 클릭 된 효과에서 다음 클릭 된 효과로 넘겨주기(카테고리 버튼 선택자 변경)
+  const active = document.querySelector('.category__btn.active');
+  active.classList.remove('active');
+  const target =
+    event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+  target.classList.add('active');
+
   projectContainer.classList.add('animation-out');
   setTimeout(() => {
     projects.forEach((project) => {
