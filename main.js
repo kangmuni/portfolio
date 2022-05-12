@@ -45,6 +45,29 @@ arrowBtn.addEventListener('click', () => {
   scrollIntoView('#home');
 });
 
+// works 카테고리 버튼 누르면 해당 프로젝트만 나올 수 있게 만들기
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (event) => {
+  const filter =
+    event.target.dataset.filter || event.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+  projectContainer.classList.add('animation-out');
+  setTimeout(() => {
+    projects.forEach((project) => {
+      if (filter === '*' || filter === project.dataset.filter) {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectContainer.classList.remove('animation-out');
+  }, 300);
+});
+
 // *
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
