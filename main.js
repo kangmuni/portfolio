@@ -30,6 +30,21 @@ document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight; //
 });
 
+// 스크롤이 할 때 arrow 버튼 보이게 하기
+const arrowBtn = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowBtn.classList.add('visible');
+  } else {
+    arrowBtn.classList.remove('visible');
+  }
+});
+
+// arrow 버튼 누르면 home 섹션으로 이동
+arrowBtn.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
+
 // *
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
