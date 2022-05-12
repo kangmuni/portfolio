@@ -20,7 +20,14 @@ navbarMenu.addEventListener('click', (event) => {
   if (link === null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+//Navbar 토글 버튼 생성
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // 스크롤 했을때 home 컨데이너 투명도 조절 하기
